@@ -6,7 +6,7 @@ export interface Data {
 
 type DataToBeSent = Omit<Data, 'id'>;
 
-const address = 'http://localhost:4000';
+const address = '3.35.13.146:4000';
 
 export async function getData(page: number, sort: string, limit: number) {
   const response = await fetch(`${address}?page=${page}&sort=${sort}&limit=${limit}`);
