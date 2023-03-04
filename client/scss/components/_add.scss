@@ -1,0 +1,21 @@
+@use '../theme';
+
+.add {
+  display: flex;
+  margin-bottom: 0.7rem;
+  height: 2rem;
+
+  & .date {
+    flex-grow: 4;
+  }
+
+  & .text {
+    flex-grow: 15;
+  }
+
+  & .submit {
+    flex-grow: 3;
+    background-color: theme.$color-light-green;
+    color: theme.$color-black;
+  }
+}

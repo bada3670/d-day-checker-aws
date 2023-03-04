@@ -1,0 +1,17 @@
+@use '../theme';
+
+.pagination {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  width: 3rem;
+  background-color: theme.$color-grey-e;
+  border-radius: 0.5rem;
+
+  &.selected {
+    color: theme.$color-yellow-brown;
+  }
+}

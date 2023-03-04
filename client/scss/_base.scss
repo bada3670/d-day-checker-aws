@@ -1,0 +1,25 @@
+@use 'theme';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input[type='submit'] {
+  border: none;
+  margin: 0px 1px;
+  cursor: pointer;
+}
+
+// skeleton
+@keyframes skeleton {
+  0% {
+    background-color: theme.$color-grey-d;
+  }
+  100% {
+    background-color: theme.$color-white;
+  }
+}
+$skeleton: skeleton 1s linear infinite alternate;
